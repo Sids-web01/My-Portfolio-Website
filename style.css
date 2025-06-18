@@ -19,7 +19,7 @@ header nav ul li a{
 }
 body{
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 header{
