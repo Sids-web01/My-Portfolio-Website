@@ -78,16 +78,7 @@ button:focus, a:focus {
 
 
 
-body::-webkit-scrollbar {
-  width: 10px;
-}
-body::-webkit-scrollbar-track {
-  background: #111;
-}
-body::-webkit-scrollbar-thumb {
-  background: purple;
-  border-radius: 5px;
-}
+
 
 
 
@@ -106,15 +97,31 @@ body::-webkit-scrollbar-thumb {
     font-size: 3rem;
 }
 
-.typing-effect::after {
-            content: '|';
-            animation: blink 1s infinite;
-        }
-        
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
+.css-typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid purple;
+  font-size: 1.5rem;
+  animation: typing 2.5s steps(22, end) forwards, blink-caret 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 16ch; } /* Adjust to match your text length */
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: purple; }
+}
+
+.span-in{
+    color: purple;
+    font-weight: bold;
+}
+
+
 
 
 .name-intro span{
