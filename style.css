@@ -71,7 +71,7 @@ nav ul li a:hover{
 
 }
 
-button:focus, a:focus {
+button:focus{
     outline: 2px solid purple;
     outline-offset: 2px;
 }
@@ -225,6 +225,8 @@ button:focus, a:focus {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .service-box .service-card:hover{
@@ -336,6 +338,8 @@ button:focus, a:focus {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 
